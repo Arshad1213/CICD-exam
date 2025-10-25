@@ -19,11 +19,11 @@ jobs:
           node-version: '20'  
 
       - name: Install dependencies
-        working-directory: ./carrental-frontend-main
+        working-directory: .
         run: npm install
 
       - name: Build frontend
-        working-directory: ./carrental-frontend-main
+        working-directory: .
         run: npm run build
 
       - name: Deploy to GitHub Pages
